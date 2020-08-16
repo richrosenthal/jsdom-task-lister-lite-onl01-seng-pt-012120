@@ -7,7 +7,10 @@ inputValue2 = document.createTextNode(inputValue);
          event.preventDefault();
 }, false);
 
-
+document.querySelector("#create-task-form").addEventListener("click", function(event) {
+         document.getElementById("list").innerTEXT += inputValue2;
+         event.preventDefault();
+}, false);
 
 
 element1 = document.querySelector('form#create-task-form'); 
