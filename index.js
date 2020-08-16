@@ -1,6 +1,9 @@
 
-document.querySelector("#id-checkbox").addEventListener("click", function(event) {
-         document.getElementById("output-box").innerHTML += "Sorry! <code>preventDefault()</code> won't let you check this!<br>";
+document.querySelector("#create-task-form").addEventListener("click", function(event) {
+  let inputValue = document.getElementById("new-task-description").value;
+
+inputValue2 = document.createTextNode(inputValue);
+         document.getElementById("list").innerHTML += inputValue2;
          event.preventDefault();
 }, false);
 
