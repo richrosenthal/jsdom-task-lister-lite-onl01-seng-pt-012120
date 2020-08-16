@@ -8,7 +8,8 @@ inputValue2 = document.createTextNode(inputValue);
 }, false);
 
 document.querySelector("#create-task-form").addEventListener("click", function(event) {
-         document.getElementById("list").innerTEXT += inputValue2;
+  let inputValue = document.getElementById("new-task-description").value;
+         document.getElementById("list").innerHTML += inputValue;
          event.preventDefault();
 }, false);
 
