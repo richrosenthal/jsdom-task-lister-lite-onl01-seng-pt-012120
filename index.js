@@ -9,7 +9,7 @@ inputValue2 = document.createTextNode(inputValue);
 
 document.querySelector("#create-task-form").addEventListener("click", function(event) {
   let inputValue = document.getElementById("new-task-description").value;
-         document.getElementById("list").innerHTML += inputValue;
+         document.getElementById("list").innerHTML += (inputValue + "</br>");
          event.preventDefault();
 }, false);
 
